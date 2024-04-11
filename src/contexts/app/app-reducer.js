@@ -12,6 +12,12 @@ case 'CHANGE_THEME':{
         theme:action.payload
     }
 }
+case 'TOGGLE_SIDEBAR':{
+    return{
+        ...state,
+        showSidebar: !state.showSidebar,
+    }
+}
     }
 }
 export default appReducer;
