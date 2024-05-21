@@ -4,12 +4,11 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@assets': path.resolve(__dirname, './src/assets'),
-      '@core': path.resolve(__dirname, './src/core'),
-    }
-  },
-  plugins: [react()],
-  base: "/AdminDahboard"
+    resolve: {
+        alias: {
+            '@assets': path.resolve(__dirname, './src/assets'),
+            '@core': path.resolve(__dirname, './src/core'),
+        }
+    },
+    plugins: [react()],
 })
